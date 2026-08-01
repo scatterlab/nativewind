@@ -1,6 +1,6 @@
 {
-  "version": "5.0.0-preview.4",
-  "name": "nativewind",
+  "version": "5.0.0-preview.4-zeta.1",
+  "name": "@scatterlab/nativewind",
   "description": "Use Tailwindcss in your cross-platform React Native applications",
   "main": "./dist/commonjs/index.js",
   "module": "./dist/module/index.js",
@@ -48,7 +48,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nativewind/nativewind.git"
+    "url": "git+https://github.com/scatterlab/nativewind.git"
   },
   "author": {
     "name": "Mark Lawlor",
@@ -162,5 +162,8 @@
   },
   "jest": {
     "preset": "./.config/jest.config.cjs"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }

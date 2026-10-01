@@ -3589,7 +3589,7 @@ __metadata:
     typescript: "npm:^5.9.2"
     typescript-eslint: "npm:^8.40.0"
   peerDependencies:
-    react-native-css: 3.0.7-zeta.4
+    react-native-css: 3.0.7-zeta.5
     tailwindcss: ">4.1.11"
   languageName: unknown
   linkType: soft

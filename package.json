@@ -1,5 +1,5 @@
 {
-  "version": "5.0.0-preview.4-zeta.6",
+  "version": "5.0.0-preview.4-zeta.7",
   "name": "@scatterlab/nativewind",
   "description": "Use Tailwindcss in your cross-platform React Native applications",
   "main": "./dist/commonjs/index.js",
@@ -135,7 +135,7 @@
     "typescript-eslint": "^8.40.0"
   },
   "peerDependencies": {
-    "react-native-css": "3.0.7-zeta.5",
+    "react-native-css": "3.0.7-zeta.6",
     "tailwindcss": ">4.1.11"
   },
   "react-native-builder-bob": {

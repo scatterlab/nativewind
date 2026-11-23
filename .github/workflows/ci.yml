@@ -8,6 +8,12 @@ on:
       - main
 
 jobs:
+  release-guards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test RC publication guards
+        run: python3 -m unittest discover -s .github/scripts -p 'test_release_rc.py'
   # To ensure that the commitlint merge_group event triggers correctly, you need to have at least one workflow that responds to the pull_request event with a job named the same as the one in your merge_group workflow (commitlint in this example). This is necessary because the merge queue relies on the existence of status checks from the pull request context.
   commitlint:
     runs-on: ubuntu-latest
@@ -79,7 +85,9 @@ jobs:
         uses: ./.github/actions/check-unstaged-files
 
   build-ios-dev:
-    runs-on: macos-15
+    runs-on: macos-26
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_26.6.app/Contents/Developer
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
